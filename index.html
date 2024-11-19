@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobo Escape</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #000;
+            position: absolute;
+            top: 75px;
+        }
+        #score {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+        }
+        #info{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+        #divplayer{
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 500px;
+        }
+        #creditsDiv{
+            display: none;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        #Wilson{
+            position: absolute;
+            top: 13px;
+            left: -22px;
+        }
+        #Ganso{
+            position: absolute;
+            top: 48px;
+            left: -22px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div id="info">
+        <label for="multiPlayer">Multiplayer</label><input type="checkbox" id="multiPlayer"><br>
+        <label for="speed">Velocidad</label><input id="speed" type="number" min="1" value="5" max="30" placeholder="Velocidad"><br>
+        <button onclick="init()">Restart</button>
+    </div>
+    <div id="divplayer">
+        <img id="Wilson" src="Wilson.png">
+        <img id="Ganso" src="Ganso.png">
+        <p id="coboPts">Cobo's Points: 0</p>
+        <p id="cubuPts">Cubu's Points: 0</p>
+    </div>
+
+    <div id="creditsDiv">
+        <p>Sprites: </p>
+        <ul>
+            <li>1st Player: Aris</li>
+            <li>2nd Player: Oier(Miniproi)</li>
+        </ul>
+        <p>Code: Eder(Euriart)</p>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
