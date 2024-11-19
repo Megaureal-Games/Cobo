@@ -5,11 +5,11 @@ const wilson = new Image();
 const ganso = new Image();
     ganso.src = "Sprites\\Ganso.png";
 const enemySprite = new Image();
-    enemySprite.src = "enemigo_20x20.png";
+    enemySprite.src = "Sprites\\enemigo_20x20.png";
 const pointsSprite = new Image();
-    pointsSprite.src = "gema_mazmorra.png";
+    pointsSprite.src = "Sprites\\gema_mazmorra.png";
 const arbusto = new Image();
-    arbusto.src = "pasto.png";
+    arbusto.src = "Sprites\\pasto.png";
 const scoreElements = {
     score: document.getElementById("score"),
     cubuS: document.getElementById('cubuPts'),
